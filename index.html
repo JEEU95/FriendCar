@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+  
+      <title>FriendCar</title>
+      
+      <link rel="icon" href="img/icon_transparent.png">
+      <!-- Bootstrap core CSS-->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+      <!-- Custom fonts for this template-->
+      <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  
+      <!-- Page level plugin CSS-->
+      <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  
+      <!-- Custom styles for this template-->
+      <link href="css/sb-admin.css" rel="stylesheet">
+      <!-- Estilos Personalizados -->
+    <link href="css/estilos.css" rel="stylesheet">
+    
+    <script type="text/javascript">
+      function validar() {
+        cs1 = document.getElementById("rCod1").value;
+        cs2 = document.getElementById("rCod2").value;
+    
+        if (cs1=="")
+          alert("Ingrese nombre de usuario");
+        if (cs2=="")
+          alert("Ingrese nombre de contraseña");
+        
+        return cs1.trim() != "" && cs2.trim() != "";
+      }
+    </script>
+
+</head>
+  <body>
+    <section id="nvbar">
+      <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">  
+              <li>
+                  <img src="img/Logo_transparent.png" width="70" height="30" alt="">
+                  <a class="navbar-brand mr-1" href="#">FriendCar</a>
+              </li>
+            </ul>
+          </div>
+          <form class="form-inline my-2 my-lg-0">
+              <section id="combo-traductor">
+                  <SELECT aling="left" NAME="selCombo" SIZE=1> 
+                      <OPTION VALUE="esp">Español</OPTION>
+                      <OPTION VALUE="ing">English</OPTION>
+                      <OPTION VALUE="ale">Deutsch</OPTION>
+                      <OPTION VALUE="fra">‪Français</OPTION> 
+                    </SELECT>
+                </section>
+          </form>
+        </nav>
+    </section>
+      
+    <section id="cover">
+      <div id="cover-texto">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="display-3">FriendCar</h1>
+              <p>Descubre rutas en común y conoce nuevos amigos</p>
+              <table class="form-inline justify-content-center">
+                <tr>
+                  <td>
+                    <input type="email" class="text"   id="rCod1" name="rCod1" placeholder="Usuario" required />
+                  </td>
+                  <td>
+                    <input type="password" class="text"   id="rCod2" name="rCod2" placeholder="Contraseña" required />
+                  </td>
+                  <td>
+                    <table class="form-inline justify-content-center">
+                      <tr>
+                        <td>
+                          <div class="container">
+                            <form class="registro" id="rCod" action="./Rutas.html" onsubmit="return validar()" >
+                              <input class="btn btn-primary btn-lg" type="submit" value="Continuar" id="ContinuarRegistro" />
+                            </form>
+                          </div>
+                        </td>
+                        <td>
+                          <a href="register.html" class="btn btn-secondary btn-lg">Crear cuenta</a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td>
+                          <a class="d-block small" href="forgot-password.html" style="color:white">¿Olvidó su Contraseña?</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

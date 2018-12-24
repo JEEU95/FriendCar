@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es">
+  <head>
+
+    <title>Bootstrap 4 Form Validator Demo</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+<script type="text/javascript">
+  function validar() {
+    cs1 = document.getElementById("rCod1").value;
+    cs2 = document.getElementById("rCod2").value;
+
+    if (cs1=="")
+      alert("Ingrese nombre de usuario");
+    if (cs2=="")
+      alert("Ingrese nombre de contraseña");
+    
+    return cs1.trim() != "" && cs2.trim() != "";
+  }
+</script>
+
+  </head>
+
+
+  <body>
+    <table class="form-inline justify-content-center">
+      <tr>
+        <td>
+            <input type="number" class="text"  maxlength="1" inputmode="numeric" id="rCod1" name="rCod1" placeholder="Usuario" required />
+        </td>
+        <td>
+            <input type="text" class="text"   id="rCod2" name="rCod2" placeholder="Contraseña" required />
+        </td>
+        <td>
+            <table>
+              <tr>
+                <td>
+                  <div class="container">
+                      <form class="registro" id="rCod" action="./Rutas.html" onsubmit="return validar()" >
+                        <input class="btn btn-primary" type="submit" value="Continuar" id="ContinuarRegistro" />
+                      </form>
+                  </div>
+                </td>
+                <td>
+                  <a href="register.html" class="btn btn-secondary btn-lg">Crear cuenta</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <a class="d-block small" href="forgot-password.html" style="color:white">¿Olvidó su Contraseña?</a>
+                </td>
+              </tr>
+            </table>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>

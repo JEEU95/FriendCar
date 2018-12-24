@@ -1,0 +1,69 @@
+
+html,
+body {
+    height: 100%;
+}
+
+
+img {
+    max-width: 50%;
+}
+
+
+/* cover */
+#cover {
+    background: #222 url('../img/fondo.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#combo-traductor {
+    text-align: right;
+    align-items: right;
+}
+#resultados {
+    height: 100%;
+    background: cadetblue;
+    text-align: right;
+    align-items: right;
+}
+
+
+#cover-usuario {
+    background: whitesmoke;
+    color: blue;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+#servicios{
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+#cover-texto {
+    width: 100%;
+    
+}
+
+#cover-texto .form-inline{
+    width: 100%;
+}
+
+.contenido-seccion {
+    padding: 5rem 0;
+}
+
+#footer-main {
+    background: #222;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2.5rem 0;
+}
